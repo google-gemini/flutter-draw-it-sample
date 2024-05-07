@@ -8,7 +8,7 @@ prompting to compare an image and word to see if they match.
 To use this sample, you'll need a Gemini API key. You can find instructions
 for generating one at https://ai.google.dev/.
 
-Before running the project locally, recreate its platform-sepcific subprojects
+Before running the project locally, recreate its platform-specific subprojects
 with this command:
 
 ```bash
