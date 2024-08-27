@@ -361,7 +361,11 @@ class IdentificationService {
   ];
 
   IdentificationService(this.apiKey) {
-    model = GenerativeModel(model: 'gemini-pro-vision', apiKey: apiKey);
+    model = GenerativeModel(
+      // 'gemini-pro-vision' has been deprecated on July 12, 2024
+      model: 'gemini-1.5-flash',
+      apiKey: apiKey,
+    );
   }
 
   Future<bool> getId(Uint8List pngBytes, String symbolName) async {
