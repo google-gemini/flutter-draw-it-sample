@@ -361,7 +361,7 @@ class IdentificationService {
   ];
 
   IdentificationService(this.apiKey) {
-    model = GenerativeModel(model: 'gemini-pro-vision', apiKey: apiKey);
+    model = GenerativeModel(model: 'gemini-1.5-flash', apiKey: apiKey);
   }
 
   Future<bool> getId(Uint8List pngBytes, String symbolName) async {
